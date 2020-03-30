@@ -20,5 +20,8 @@
     },
     "scripts": {
         "commit": "git-cz"
+    },
+    "resolutions": {
+        "minimist": "^1.2.5"
     }
 }
