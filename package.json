@@ -8,10 +8,21 @@
     "license": "MIT",
     "private": false,
     "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
+        "@babel/preset-typescript": "^7.9.0",
+        "@types/jest": "^25.1.4",
+        "@types/node": "^13.9.5",
+        "babel-jest": "^25.2.4",
         "commitizen": "^4.0.3",
+        "cross-env": "^7.0.2",
         "cz-conventional-changelog": "3.1.0",
+        "jest": "^25.2.4",
+        "laravel-mix": "^5.0.4",
         "np": "^6.2.0",
-        "semantic-release": "^17.0.4"
+        "semantic-release": "^17.0.4",
+        "ts-loader": "^6.2.2",
+        "typescript": "^3.8.3"
     },
     "config": {
         "commitizen": {
@@ -19,7 +30,16 @@
         }
     },
     "scripts": {
-        "commit": "git-cz"
+        "commit": "git-cz",
+        "dev": "yarn development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "yarn development -- --watch",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "yarn production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "test": "jest",
+        "test:watch": "yarn test --watch",
+        "test:coverage": "yarn test --coverage"
     },
     "resolutions": {
         "minimist": "^1.2.5"
