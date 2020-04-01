@@ -44,8 +44,7 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "test": "jest",
         "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage",
-        "coverage": "jest --coverage | coveralls"
+        "test:coverage": "jest --coverage"
     },
     "resolutions": {
         "minimist": "^1.2.5"
