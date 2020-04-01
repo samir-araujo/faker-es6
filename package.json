@@ -17,6 +17,7 @@
         "agadoo": "^2.0.0",
         "babel-jest": "^25.2.4",
         "commitizen": "^4.0.3",
+        "coveralls": "^3.0.11",
         "cross-env": "^7.0.2",
         "cz-conventional-changelog": "3.1.0",
         "jest": "^25.2.4",
@@ -43,7 +44,8 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "test": "jest",
         "test:watch": "jest --watch",
-        "test:coverage": "jest --coverage"
+        "test:coverage": "jest --coverage",
+        "coverage": "jest --coverage | coveralls"
     },
     "resolutions": {
         "minimist": "^1.2.5"
