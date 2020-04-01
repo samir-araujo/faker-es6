@@ -48,7 +48,7 @@ npm install --dev faker-es6
 ### First name example
 
 ```ts
-import { firstName } from 'faker-es6/name/firstName';
+import { firstName } from 'faker-es6/lib/name/firstName';
 
 const name = firstName(); // Random first name: Yessenia
 const anotherName = firstName(); // Random first name: Marilyne
@@ -57,8 +57,8 @@ const anotherName = firstName(); // Random first name: Marilyne
 ### First name with locale example
 
 ```ts
-import { firstName } from 'faker-es6/name/firstName';
-import Locale from 'faker-es6/types/locale';
+import { firstName } from 'faker-es6/lib/name/firstName';
+import { Locale } from 'faker-es6/lib/types/locale';
 
 const name = firstName(Locale.PT_BR); // Random first name in pt_BR: Bruna
 const anotherName = firstName(Locale.PT_BR); // Random first name in pt_BR: Paula
@@ -216,8 +216,8 @@ To use a locale, just pass it as a parameter in the method you want to use.
 ### Localization example with TypeScript
 
 ```ts
-import { firstName } from 'faker-es6/name/firstName';
-import Locale from 'faker-es6/types/locale';
+import { firstName } from 'faker-es6/lib/name/firstName';
+import { Locale } from 'faker-es6/lib/types/locale';
 
 const name = firstName(Locale.PT_BR); // Random first name in pt_BR: Bruna
 const anotherName = firstName(Locale.PT_BR); // Random first name in pt_BR: Paula
@@ -228,7 +228,7 @@ const anotherName = firstName(Locale.PT_BR); // Random first name in pt_BR: Paul
 ### Localization example without TypeScript
 
 ```ts
-import { firstName } from 'faker-es6/name/firstName';
+import { firstName } from 'faker-es6/lib/name/firstName';
 
 const name = firstName('pt_BR'); // Random first name in pt_BR: Bruna
 const anotherName = firstName('pt_BR'); // Random first name in pt_BR: Paula

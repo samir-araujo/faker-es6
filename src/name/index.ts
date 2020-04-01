@@ -1,3 +1,3 @@
-import firstName from './firstName/firstName';
+import firstName from './firstName';
 
 export default { firstName };

@@ -6,7 +6,7 @@ declare const faker: {
         randomNumber: typeof import("./helpers/randomNumber").default;
     };
     name: {
-        firstName: typeof import("./name/firstName/firstName").default;
+        firstName: typeof import("./name/firstName").default;
     };
 };
 export default faker;

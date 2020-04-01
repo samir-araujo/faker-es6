@@ -1,4 +1,4 @@
-import firstName from './firstName/firstName';
+import firstName from './firstName';
 declare const _default: {
     firstName: typeof firstName;
 };
