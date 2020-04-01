@@ -45,7 +45,7 @@
         "test": "jest",
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage",
-        "prepublishOnly": "agadoo"
+        "prepublishOnly": "agadoo index.ts"
     },
     "resolutions": {
         "minimist": "^1.2.5"
