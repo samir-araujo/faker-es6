@@ -1,8 +1,6 @@
 language: node_js
 node_js: node
 
-script: echo "Running tests against $(node -v)..."
-
 jobs:
   include:
     - stage: Produce Coverage
@@ -12,6 +10,5 @@ jobs:
       node_js: node
       deploy:
         provider: script
-        skip_cleanup: true
         script:
           - yarn semantic-release

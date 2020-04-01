@@ -20,6 +20,7 @@
         "coveralls": "^3.0.11",
         "cross-env": "^7.0.2",
         "cz-conventional-changelog": "3.1.0",
+        "husky": "^4.2.3",
         "jest": "^25.2.4",
         "laravel-mix": "^5.0.4",
         "lodash": "^4.17.15",
@@ -70,5 +71,10 @@
         "jest",
         "testing",
         "test"
-    ]
+    ],
+    "husky": {
+        "hooks": {
+            "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
+        }
+    }
 }
