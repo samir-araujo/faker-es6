@@ -49,5 +49,26 @@
     },
     "resolutions": {
         "minimist": "^1.2.5"
-    }
+    },
+    "bugs": {
+        "url": "https://github.com/samir-araujo/faker-es6/issues",
+        "email": "samir.blanc@gmail.com"
+    },
+    "keywords": [
+        "faker",
+        "faker-es6",
+        "mock",
+        "mocking",
+        "fake-content",
+        "fake",
+        "generator",
+        "data",
+        "data-generator",
+        "javascript",
+        "es6",
+        "typescript",
+        "jest",
+        "testing",
+        "test"
+    ]
 }
