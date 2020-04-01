@@ -1,5 +1,5 @@
 import { Locale } from '../../types/locale';
-import firstName from '../firstName/firstName';
+import firstName from '../firstName';
 import locales from '../firstName/locales';
 
 describe('Name | firstName', () => {
