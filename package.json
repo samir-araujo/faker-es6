@@ -70,7 +70,7 @@
     "husky": {
         "hooks": {
             "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-            "pre-push": "branch=`git branch | grep \\* | cut -d ' ' -f2`;branchesToCheck=(\"master\"); [[ \" ${branchesToCheck[@]} \" =~ \" ${branch} \" ]] &&  yarn test || exit 0"
+            "pre-push": "yarn test"
         }
     }
 }
