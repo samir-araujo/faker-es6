@@ -213,6 +213,14 @@ const anotherName = faker.name.firstName(); // Random first name: Marilyne
 
 To use a locale, just pass it as a parameter in the method you want to use.
 
+## Current available locales
+
+Since this is lib is a WIP, at the time of development it only supports:
+
+-   **en** 🇺🇸
+-   **ja** 🇯🇵 (partial support for now)
+-   **pt_BR** 🇧🇷
+
 ### Localization example with TypeScript
 
 ```ts
