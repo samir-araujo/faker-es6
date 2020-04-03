@@ -1,6 +1,6 @@
-import { Locale } from '../../types/locale';
-import firstName from '../firstName';
-import locales from '../firstName/locales';
+import { Locale } from '../../../types/locale';
+import firstName from '..';
+import locales from '../locales';
 
 describe('Name | firstName', () => {
     it('returns a random first name', () => {

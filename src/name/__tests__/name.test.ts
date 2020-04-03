@@ -1,7 +1,11 @@
 import name from '..';
 
 describe('Name', () => {
-    it('has firstName module', () => {
+    it('should have firstName module', () => {
         expect(name).toHaveProperty('firstName');
+    });
+
+    it('should have lastName module', () => {
+        expect(name).toHaveProperty('lastName');
     });
 });

@@ -1,15 +1,15 @@
 import locales from '..';
 
-describe('Name | firstName | Locales', () => {
-    it('has en', () => {
+describe('Name | lastName | Locales', () => {
+    it('should have en locale', () => {
         expect(locales).toHaveProperty('en');
     });
 
-    it('has pt_BR', () => {
+    it('should have pt_BR locale', () => {
         expect(locales).toHaveProperty('pt_BR');
     });
 
-    it('has ja', () => {
+    it('should have ja locale', () => {
         expect(locales).toHaveProperty('ja');
     });
 });
