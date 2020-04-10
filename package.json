@@ -15,14 +15,18 @@
         "@types/jest": "^25.1.4",
         "@types/lodash": "^4.14.149",
         "@types/node": "^13.9.5",
+        "@typescript-eslint/eslint-plugin": "^2.27.0",
+        "@typescript-eslint/parser": "^2.27.0",
         "agadoo": "^2.0.0",
         "babel-jest": "^25.2.4",
         "commitizen": "^4.0.3",
         "coveralls": "^3.0.11",
         "cross-env": "^7.0.2",
         "cz-conventional-changelog": "3.1.0",
+        "eslint": "^6.8.0",
         "husky": "^4.2.3",
         "jest": "^25.2.4",
+        "lint-staged": ">=10",
         "lodash": "^4.17.15",
         "np": "^6.2.0",
         "semantic-release": "^17.0.4",
@@ -38,6 +42,7 @@
     "scripts": {
         "commit": "git-cz",
         "build": "tsc",
+        "lint": "eslint '**/*.ts' --fix --ignore-pattern node_modules/ --ignore-pattern lib/",
         "test": "jest",
         "test:watch": "jest --watch",
         "test:coverage": "jest --coverage",
@@ -70,7 +75,11 @@
     "husky": {
         "hooks": {
             "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-            "pre-push": "yarn test"
+            "pre-push": "yarn test",
+            "pre-commit": "lint-staged"
         }
+    },
+    "lint-staged": {
+        "*.js": "eslint --cache --fix"
     }
 }

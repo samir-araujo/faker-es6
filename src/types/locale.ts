@@ -226,9 +226,9 @@ export enum Locale {
     ZH_SG = 'zh_SG',
     ZH_TW = 'zh_TW',
     ZU = 'zu',
-    ZU_ZA = 'zu_ZA'
+    ZU_ZA = 'zu_ZA',
 }
 
-export type LocaleObject<T = any> = {
+export type LocaleObject<T = string> = {
     [K in Locale]?: T;
 };

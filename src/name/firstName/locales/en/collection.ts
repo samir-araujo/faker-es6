@@ -676,7 +676,7 @@ const collection: string[] = [
     'Dana',
     'Dandre',
     'Dane',
-    "D'angelo",
+    'D\'angelo',
     'Dangelo',
     'Danial',
     'Daniela',

@@ -4,7 +4,10 @@ import getLocale from '../getLocale';
 
 describe('Helpers | getLocale', () => {
     it('returns requested locale from given locale collection', () => {
-        const locales: LocaleObject<string[]> = { en: ['en'], pt_BR: ['pt_BR'] };
+        const locales: LocaleObject<string[]> = {
+            en: ['en'],
+            pt_BR: ['pt_BR'],
+        };
 
         const locale = getLocale(locales, Locale.PT_BR);
 
@@ -12,7 +15,10 @@ describe('Helpers | getLocale', () => {
     });
 
     it(`returns ${Locale.EN} locale by default`, () => {
-        const locales: LocaleObject<string[]> = { en: ['en'], pt_BR: ['pt_BR¿'] };
+        const locales: LocaleObject<string[]> = {
+            en: ['en'],
+            pt_BR: ['pt_BR¿'],
+        };
 
         const locale = getLocale(locales);
 
@@ -20,7 +26,10 @@ describe('Helpers | getLocale', () => {
     });
 
     it(`returns ${Locale.EN} if given locale is invalid`, () => {
-        const locales: LocaleObject<string[]> = { en: ['en'], pt_BR: ['pt_BR¿'] };
+        const locales: LocaleObject<string[]> = {
+            en: ['en'],
+            pt_BR: ['pt_BR¿'],
+        };
 
         const locale = getLocale(locales, Locale.RU);
 

@@ -11,7 +11,7 @@ import random from 'lodash/random';
  * @param {boolean} [isFloating=false]
  * @returns {number}
  */
-export default function randomNumber(min?: number, max?: number, isFloating: boolean = false): number {
+export default function randomNumber(min?: number, max?: number, isFloating = false): number {
     if (min === undefined) {
         min = 0;
     }
