@@ -8,4 +8,8 @@ describe('Name', () => {
     it('should have lastName module', () => {
         expect(name).toHaveProperty('lastName');
     });
+
+    it('should have prefix module', () => {
+        expect(name).toHaveProperty('prefix');
+    });
 });
