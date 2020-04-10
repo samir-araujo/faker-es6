@@ -12,4 +12,8 @@ describe('Name', () => {
     it('should have prefix module', () => {
         expect(name).toHaveProperty('prefix');
     });
+
+    it('should have suffix module', () => {
+        expect(name).toHaveProperty('suffix');
+    });
 });

@@ -79,6 +79,7 @@ const anotherName = faker.name.firstName(); // Random first name: Marilyne
     -   firstName
     -   lastName
     -   prefix
+    -   suffix
 -   helpers
     -   getLocale
     -   randomArrayElement
@@ -188,7 +189,6 @@ const anotherName = faker.name.firstName(); // Random first name: Marilyne
     -   ronSwanson
     -   theOffice
 -   name
-    -   suffix
     -   title
 -   phone
     -   phoneFormats
