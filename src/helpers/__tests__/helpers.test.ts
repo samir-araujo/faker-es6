@@ -1,19 +1,23 @@
 import helpers from '..';
 
 describe('Helpers', () => {
-    it('has randomNumber module', () => {
+    it('should have randomNumber module', () => {
         expect(helpers).toHaveProperty('randomNumber');
     });
 
-    it('has randomArrayElement module', () => {
+    it('should have randomArrayElement module', () => {
         expect(helpers).toHaveProperty('randomArrayElement');
     });
 
-    it('has randomArrayElements module', () => {
+    it('should have randomArrayElements module', () => {
         expect(helpers).toHaveProperty('randomArrayElements');
     });
 
-    it('has getLocale module', () => {
+    it('should have getLocale module', () => {
         expect(helpers).toHaveProperty('getLocale');
+    });
+
+    it('should have parseRegex module', () => {
+        expect(helpers).toHaveProperty('parseRegex');
     });
 });

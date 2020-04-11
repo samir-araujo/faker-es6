@@ -85,6 +85,7 @@ const anotherName = faker.name.firstName(); // Random first name: Marilyne
     -   randomArrayElement
     -   randomArrayElements
     -   randomNumber
+    -   parseRegex
 
 ## Upcoming methods
 
