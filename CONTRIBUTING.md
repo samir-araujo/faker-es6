@@ -15,6 +15,9 @@
     -   [How to add a new module](#how-to-add-a-new-module)
     -   [How to add a new method to an existing module](#how-to-add-a-new-method-to-an-existing-module)
     -   [How to change a existing module](#how-to-change-a-existing-module)
+    -   [How to generate random data based on another method(s)](#how-to-generate-random-data-based-on-another-methods)
+        -   [Generating a random phone number from a regex](#generating-a-random-phone-number-from-a-regex)
+        -   [Generating a random string from a RegEx with replacements](#generating-a-random-string-from-a-regex-with-replacements)
     -   [How to open a PR](#how-to-open-a-pr)
 -   [Coding Style](#coding-style)
 -   [Naming Convention](#naming-convention-and-other-conventions)
@@ -230,6 +233,41 @@ To add locales to a `method` one should:
 
 -   `src/myModuleName/myMethodName/__tests__/myMethodName.test.ts`
 -   `src/myModuleName/myMethodName/locales/__tests__/locales.test.ts`
+
+### How to generate random data based on another method(s)
+
+Faker ES6 has a special helper named `parseRegex` which can generate data from a valid RegEx and also accepts replacements.
+
+This allows for modules/methods to use other functions to create new meaninful data.
+
+Here are a few examples:
+
+### Generating a random phone number from a RegEx
+
+```ts
+// src/myModule/myMethod/index.ts
+
+import parseRegex from '../../helpers/parseRegex';
+
+// Renders: 23 81834-9138
+const randomPhone = parseRegex(/\d{2} \d{5}-\d{4}/);
+```
+
+### Generating a random string from a RegEx with replacements
+
+```ts
+// src/myModule/myMethod/index.ts
+
+import parseRegex from '../../helpers/parseRegex';
+import firstName from '../../name/firstName';
+
+const data = {
+    namePlaceholder: firstName(),
+};
+
+// Renders: Maria 18
+const randomPhone = parseRegex(/:namePlaceholder \d{2}/);
+```
 
 ### How to open a PR
 
