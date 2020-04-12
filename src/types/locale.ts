@@ -229,6 +229,6 @@ export enum Locale {
     ZU_ZA = 'zu_ZA',
 }
 
-export type LocaleObject<T = string> = {
+export type LocaleObject<T = string | RegExp> = {
     [K in Locale]?: T;
 };
