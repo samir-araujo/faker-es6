@@ -30,7 +30,7 @@
         "lodash": "^4.17.15",
         "np": "^6.2.0",
         "randexp": "^0.5.3",
-        "semantic-release": "^17.0.4",
+        "semantic-release": "^19.0.3",
         "ts-jest": "^25.3.0",
         "ts-loader": "^6.2.2",
         "typescript": "^3.8.3"
